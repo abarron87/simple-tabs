@@ -1,0 +1,48 @@
+.tabs-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tabs-container li {
+    display: inline-block;
+    padding: 5px 8px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-width: 1px 1px 0 0;
+    background-color: #eee;
+}
+
+.tabs-container li:first-child {
+    border-left-width: 1px;
+}
+
+.tabs-container li.active {
+    background-color: #fff;
+    position: relative;
+}
+
+.tabs-container li.active:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.tab-contents {
+    min-height: 300px;
+    border: 1px solid #000;
+}
+
+.tab-contents p {
+    text-align: center;
+    margin: 15% 0;
+    font-size: 60px;
+    font-weight: bold;
+}
